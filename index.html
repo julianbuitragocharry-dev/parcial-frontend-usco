@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AutoMotion</title>
+    <link rel="stylesheet" href="styles/style.css">
     <!-- Bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
@@ -35,19 +36,39 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="https://picsum.photos/800/200?random=1" class="d-block w-100" alt="...">
+            <img src="img/nav1.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Título 3</h5>
+                <p>Descripción para la imagen 3.</p>
+            </div>
           </div>
           <div class="carousel-item">
-            <img src="https://picsum.photos/800/200?random=1" class="d-block w-100" alt="...">
+            <img src="img/nav2.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Título 3</h5>
+                <p>Descripción para la imagen 3.</p>
+            </div>
           </div>
           <div class="carousel-item">
-            <img src="https://picsum.photos/800/200?random=1" class="d-block w-100" alt="...">
+            <img src="img/nav3.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Título 3</h5>
+                <p>Descripción para la imagen 3.</p>
+            </div>
           </div>
           <div class="carousel-item">
-            <img src="https://picsum.photos/800/200?random=1" class="d-block w-100" alt="...">
+            <img src="img/nav4.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Título 3</h5>
+                <p>Descripción para la imagen 3.</p>
+            </div>
           </div>
           <div class="carousel-item">
-            <img src="https://picsum.photos/800/200?random=1" class="d-block w-100" alt="...">
+            <img src="img/nav5.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Título 3</h5>
+                <p>Descripción para la imagen 3.</p>
+            </div>
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -60,8 +81,83 @@
         </button>
       </div>
     
-    
-
+    <!-- sedes -->
+    <div class="container mt-4">
+        <div class="row">
+          <!-- Columna de oficinas -->
+          <div class="col-md-4">
+            <h3>Ubicaciones de Oficinas</h3>
+            <div class="accordion" id="oficinasAccordion">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Sede Principal
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#oficinasAccordion">
+                  <div class="accordion-body">
+                    <p>La Sede Central está ubicada en el corazón de la ciudad, ofreciendo fácil acceso a todos los servicios principales. Cuenta con modernas instalaciones y un equipo altamente capacitado para atender todas tus necesidades.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Sede Norte
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#oficinasAccordion">
+                  <div class="accordion-body">
+                    <p>La Sede Norte está situada en una zona estratégica, cerca de importantes centros comerciales y áreas residenciales. Ofrece un ambiente cómodo y profesional, ideal para reuniones y eventos corporativos.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Sede Prado Bajo
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#oficinasAccordion">
+                  <div class="accordion-body">
+                    <p>La Sede Prado Bajo se encuentra en una zona tranquila y accesible, perfecta para quienes buscan un entorno de trabajo relajado. Está equipada con tecnología de punta y ofrece una variedad de servicios para apoyar tus actividades diarias.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+        <!-- Columna del mapa -->
+        <div class="col-md-8">
+            <ul class="nav nav-tabs" id="mapTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link active" id="principal-tab" data-bs-toggle="tab" href="#principal" role="tab" aria-controls="principal" aria-selected="true">Sede Principal</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="norte-tab" data-bs-toggle="tab" href="#norte" role="tab" aria-controls="norte" aria-selected="false">Sede Norte</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="prado-tab" data-bs-toggle="tab" href="#prado" role="tab" aria-controls="prado" aria-selected="false">Sede Prado Bajo</a>
+                </li>
+            </ul>
+            <div class="tab-content" id="mapTabsContent">
+                <div class="tab-pane fade show active" id="principal" role="tabpanel" aria-labelledby="principal-tab">
+                    <p><strong>Dirección:</strong> Carrera 5 # 10-60, Neiva, Huila</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.732123456789!2d-75.281234567890!3d2.938123456789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3b1234567890!2sCarrera%205%20%23%2010-60%2C%20Neiva%2C%20Huila!5e0!3m2!1ses!2sco!4v1234567890123" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="tab-pane fade" id="norte" role="tabpanel" aria-labelledby="norte-tab">
+                    <p><strong>Dirección:</strong> Calle 8 # 36-02, Barrio Santa Inés, Neiva</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.732123456789!2d-75.281234567890!3d2.938123456789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3b1234567890!2sCalle%208%20%23%2036-02%2C%20Barrio%20Santa%20In%C3%A9s%2C%20Neiva!5e0!3m2!1ses!2sco!4v1234567890123" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="tab-pane fade" id="prado" role="tabpanel" aria-labelledby="prado-tab">
+                    <p><strong>Dirección:</strong> Carrera 7A # 26-15, Prado Bajo, Neiva</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.732123456789!2d-75.281234567890!3d2.938123456789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3b1234567890!2sCarrera%207A%20%23%2026-15%2C%20Prado%20Bajo%2C%20Neiva!5e0!3m2!1ses!2sco!4v1234567890123" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+        
+        </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
