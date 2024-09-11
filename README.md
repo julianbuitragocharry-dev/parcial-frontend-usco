@@ -1,30 +1,20 @@
-# Proyecto de Frontend - 4º Semestre, Primer Corte
+## Proyecto Frontend - Concesionario de Autos
 
-## Descripción
-Este proyecto corresponde al 4º semestre, primer corte, donde se evaluará el manejo de tecnologías frontend.
+Este proyecto es parte de la evaluación del primer corte de Programación Web, centrado en el manejo de tecnologías frontend mediante la creación de una página web para un concesionario de autos.
 
-## Objetivo
-La página web tiene como propósito simular una página web para un concesionario.
+### Secciones
+- **Inicio**: Introducción al sitio.
+- **Vehículos**: Detalles de modelos de autos.
+- **Test Drive**: Agendar pruebas de manejo.
+- **Sobre Nosotros**: Información de la empresa y equipo.
 
-## Secciones del Proyecto
-- **Inicio**: Página principal con una introducción a la temática del sitio.
-- **Vehículos**: Información detallada sobre diferentes modelos de autos.
-- **Test Drive**: Sección para agendar pruebas de manejo.
-- **Sobre Nosotros**: Información sobre la empresa y el equipo detrás del proyecto.
-
-## Tecnologías Utilizadas
+### Tecnologías
 - HTML
 - CSS
 - JavaScript
 - Bootstrap
 
-## Instrucciones de Uso
+### Instrucciones
 1. Clonar el repositorio.
-2. Abrir el archivo `index.html` en un navegador web para visualizar la página principal.
-3. Navegar a través de las diferentes secciones para explorar el contenido.
-
-## Autor
-- Julian Enrique Buitrago Charry
-
-## Institución
-- Universidad Surcolombiana
+2. Abrir `index.html` en un navegador para ver la página.
+3. Navegar por las secciones para explorar el contenido.
